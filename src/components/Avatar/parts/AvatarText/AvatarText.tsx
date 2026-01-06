@@ -5,13 +5,13 @@ import { useAvatarContainerContext } from '../AvatarContainer/AvatarContainerCon
 import styles from './AvatarText.module.scss';
 import { getTextStyles } from './helpers';
 
-export type AvatarTextGradient = 'red' | 'orange' | 'green' | 'blue' | 'purple' | 'custom';
+export type AvatarTextGradient = 'red' | 'orange' | 'green' | 'blue' | 'purple' | 'gray' | 'custom';
 
 export interface AvatarTextProps extends ComponentProps<'span'> {
   gradient?: AvatarTextGradient
 }
 
-// todo уточнить у дизайнеров размер текста при разных размерах аватарки
+// todo: уточнить у дизайнеров размер текста при разных размерах аватарки
 export const AvatarText = forwardRef<HTMLSpanElement, AvatarTextProps>((props, forwardedRef) => {
   const {
     className,
