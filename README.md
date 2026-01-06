@@ -28,7 +28,7 @@ const App = () => {
     <MaxUI>
       <Panel centeredX centeredY>
         <Button>
-          Hello world!
+          Hello, world!
         </Button>
       </Panel>
     </MaxUI>
